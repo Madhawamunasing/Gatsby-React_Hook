@@ -1,8 +1,7 @@
 import * as React from "react"
 import { GlobalStyle } from "../styles/globleStyle"
+import Header from "./Header"
 // import { useStaticQuery, graphql } from "gatsby"
-
-// import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -20,6 +19,7 @@ const Layout = ({ children }) => {
     <>
       <div>
         <GlobalStyle />
+        <Header />
         <main>{children}</main>
       </div>
     </>
