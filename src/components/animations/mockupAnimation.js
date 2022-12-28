@@ -17,6 +17,15 @@ const Wrapper = styled.div`
   position: relative;
   prespective: 5000;
 
+  @media (max-width: 768px) {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+
+  @media (max-width: 450px) {
+    transform: scale(0.4);
+  }
+
   div {
     transform: rotateY(-20deg) rotateX(20deg);
     transform-origin: bottom left;
@@ -70,8 +79,6 @@ const Wrapper = styled.div`
     box-sizing: border-box;
     box-shadow: 0px 16.3881px 32.7761px rgba(99, 30, 187, 0.5);
     backdrop-filter: blur(21.8507px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 16px;
   }
 
@@ -93,8 +100,6 @@ const Wrapper = styled.div`
     box-shadow: 0px 8.19119px 16.3824px rgba(0, 0, 0, 0.1),
       0px 16.3824px 32.7648px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(21.8432px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 16.3824px;
   }
 
@@ -108,8 +113,6 @@ const Wrapper = styled.div`
     background: url("/images/animations/mockup3.svg"), rgba(23, 12, 61, 0.5);
     border: 0.342305px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(27.3844px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 6.8461px;
   }
 
@@ -124,8 +127,6 @@ const Wrapper = styled.div`
     border: 0.5px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     backdrop-filter: blur(27.3844px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 14px;
   }
 
@@ -140,8 +141,6 @@ const Wrapper = styled.div`
     border: 0.5px solid rgba(255, 255, 255, 0.2);
     box-sizing: border-box;
     backdrop-filter: blur(27.3844px);
-    /* Note: backdrop-filter has minimal browser support */
-
     border-radius: 14px;
   }
 `
